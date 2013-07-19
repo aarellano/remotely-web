@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 </head>
-  <body ng-app="remotelyApp">
+  <body ng-app="remotelyAngularApp">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -66,10 +66,20 @@
         <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
         <script src="scripts/services/user.js"></script>
         <script src="scripts/controllers/users.js"></script>
+        <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/websocket_rails_client.js -->
-        <script src="scripts/vendor/websocket_rails_client.js"></script>
+        <script src="scripts/vendor/websocket_rails.js"></script>
+        <script src="scripts/vendor/channel.js"></script>
+        <script src="scripts/vendor/event.js"></script>
+        <script src="scripts/vendor/http_connection.js"></script>
+        <script src="scripts/vendor/websocket_connection.js"></script>
+        <script src="scripts/services/websocket.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js misc.js -->
+        <script src="scripts/chat.js"></script>
         <!-- endbuild -->
 
 </body>

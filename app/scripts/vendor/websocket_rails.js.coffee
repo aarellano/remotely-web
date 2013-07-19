@@ -1,6 +1,5 @@
 ###
 WebsocketRails JavaScript Client
-from https://github.com/DanKnox/websocket-rails
 
 Setting up the dispatcher:
   var dispatcher = new WebSocketRails('localhost:3000/websocket');

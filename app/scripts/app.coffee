@@ -1,4 +1,4 @@
-window.app = angular.module('remotelyApp', ['ngResource'])
+window.app = angular.module('remotelyAngularApp', [])
   .config ($routeProvider) ->
     $routeProvider
       .when '/',
@@ -7,5 +7,8 @@ window.app = angular.module('remotelyApp', ['ngResource'])
       .when '/users',
         templateUrl: 'views/user.html',
         controller: 'UsersCtrl'
+      .when '/chat',
+        templateUrl: 'views/chat.html',
+        controller: 'ChatCtrl'
       .otherwise
         redirectTo: '/'
